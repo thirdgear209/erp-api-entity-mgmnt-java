@@ -1,5 +1,4 @@
-/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/AppConfiguration.java
 /Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/ErpApiDemoApplication.java
-/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/controller/FooService.java
-/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/controller/OperationCodeController.java
-/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/controller/TankController.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/AppConfiguration.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/controller/OperationCodeController.java
+/Users/matthewdalby/_projects/coding-portfolio/erp-api-entity-mgmnt-java/src/main/java/com/thirdgear/example/erp_api_demo/entity_mgmnt/controller/TankController.java
