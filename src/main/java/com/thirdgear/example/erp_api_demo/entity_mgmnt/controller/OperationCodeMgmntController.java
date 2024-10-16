@@ -9,14 +9,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.thirdgear.example.erp_api_demo.entity.OperationCode;
-import com.thirdgear.example.erp_api_demo.entity.Tank;
+import com.thirdgear.example.erp_api_demo.core.entity.OperationCode;
 import com.thirdgear.example.erp_api_demo.entity_mgmnt.service.OperationCodeMgmntService;
-import com.thirdgear.example.erp_api_demo.service.TankManagementService;
 
 @RestController
-@RequestMapping("/operationCode")
-public class OperationCodeController {
+@RequestMapping("/mgmnt/operationCode")
+public class OperationCodeMgmntController {
 	
 
     @Autowired
@@ -31,13 +29,13 @@ public class OperationCodeController {
     } 
     
     @PostMapping    
-    public Tank post(OperationCode opCode){
-    	opCodeService.createOperationCode(opCode);
+    public OperationCode post(OperationCode opCode){
+    	return opCodeService.createOperationCode(opCode);
     }
 
     @PutMapping
-    public Tank put(OperationCode opCode){
-    	opCodeService.updateOperationCode(opCode);
+    public OperationCode put(OperationCode opCode){
+    	return opCodeService.updateOperationCode(opCode);
     }
 
     @DeleteMapping("/{id}")

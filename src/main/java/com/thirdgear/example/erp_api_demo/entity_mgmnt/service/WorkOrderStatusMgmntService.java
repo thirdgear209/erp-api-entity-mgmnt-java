@@ -1,6 +1,6 @@
 package com.thirdgear.example.erp_api_demo.entity_mgmnt.service;
 
-import com.thirdgear.example.erp_api_demo.entity.WorkOrderStatus;
+import com.thirdgear.example.erp_api_demo.core.entity.WorkOrderStatus;
 
 public interface WorkOrderStatusMgmntService {
 

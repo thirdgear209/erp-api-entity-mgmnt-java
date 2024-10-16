@@ -12,9 +12,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-// @Import(CoreConfiguration.class)
 @ComponentScan(basePackages = {"com.thirdgear.example.erp_api_demo.*"})
-@EnableWebSecurity
+// @EnableWebSecurity
 public class AppConfiguration {
 	@Bean
 	public DataSource dataSource() {
@@ -32,7 +31,9 @@ public class AppConfiguration {
 	
 	protected void configure(HttpSecurity security) throws Exception
     {
+		System.out.println("aaaaaaqaaaaaaa");
      security.httpBasic().disable();
+     security.csrf().disable();
     }
 	
 

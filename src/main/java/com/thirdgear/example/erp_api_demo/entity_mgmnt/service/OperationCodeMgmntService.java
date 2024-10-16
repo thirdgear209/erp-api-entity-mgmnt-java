@@ -1,7 +1,7 @@
 package com.thirdgear.example.erp_api_demo.entity_mgmnt.service;
 
-import com.thirdgear.example.erp_api_demo.entity.OperationCode;
-import com.thirdgear.example.erp_api_demo.entity.Tank;
+import com.thirdgear.example.erp_api_demo.core.entity.OperationCode;
+import com.thirdgear.example.erp_api_demo.core.entity.Tank;
 
 public interface OperationCodeMgmntService {
 
@@ -12,12 +12,12 @@ public interface OperationCodeMgmntService {
 	 * @param tank
 	 * @return
 	 */
-	public Tank createOperationCode(OperationCode operationCode);
+	public OperationCode createOperationCode(OperationCode operationCode);
 	
 	/**
 	 * 
 	 */
-	public Tank updateOperationCode(OperationCode operationCode);
+	public OperationCode updateOperationCode(OperationCode operationCode);
 	
 	/**
 	 * 
@@ -29,6 +29,6 @@ public interface OperationCodeMgmntService {
 	 * @param id
 	 * @return
 	 */
-	public Tank getById(int id);
+	public OperationCode getById(int id);
 	
 }

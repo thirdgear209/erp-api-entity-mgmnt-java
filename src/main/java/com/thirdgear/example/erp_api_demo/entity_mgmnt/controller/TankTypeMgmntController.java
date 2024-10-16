@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.thirdgear.example.erp_api_demo.entity.Tank;
-import com.thirdgear.example.erp_api_demo.entity.TankType;
+import com.thirdgear.example.erp_api_demo.core.entity.Tank;
+import com.thirdgear.example.erp_api_demo.core.entity.TankType;
 import com.thirdgear.example.erp_api_demo.entity_mgmnt.service.TankTypeMgmntService;
 
 @RestController
-@RequestMapping("/tankType")
+@RequestMapping("/mgmnt/tankType")
 public class TankTypeMgmntController {
 	
 	@Autowired
@@ -30,12 +30,12 @@ public class TankTypeMgmntController {
     
     @PostMapping    
     public TankType post(TankType tankType){
-        tankTypeService.createTankType(tankType);
+        return tankTypeService.createTankType(tankType);
     }
 
     @PutMapping
     public TankType put(TankType tankType){
-        tankTypeService.updateTankType(tankType);
+        return tankTypeService.updateTankType(tankType);
     }
 
     @DeleteMapping("/{id}")

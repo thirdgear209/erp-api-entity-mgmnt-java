@@ -1,7 +1,7 @@
 package com.thirdgear.example.erp_api_demo.entity_mgmnt.service.impl;
 
-import com.thirdgear.example.erp_api_demo.entity.Tank;
-import com.thirdgear.example.erp_api_demo.entity.TankStatus;
+import com.thirdgear.example.erp_api_demo.core.entity.Tank;
+import com.thirdgear.example.erp_api_demo.core.entity.TankStatus;
 import com.thirdgear.example.erp_api_demo.entity_mgmnt.service.TankStatusMgmntService;
 
 public class TankStatusMgmntServiceImpl implements TankStatusMgmntService{

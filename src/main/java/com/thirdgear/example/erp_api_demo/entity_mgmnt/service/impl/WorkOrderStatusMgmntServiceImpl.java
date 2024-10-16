@@ -1,22 +1,16 @@
 package com.thirdgear.example.erp_api_demo.entity_mgmnt.service.impl;
 
-import com.thirdgear.example.erp_api_demo.entity.OperationCode;
-import com.thirdgear.example.erp_api_demo.entity.Tank;
-import com.thirdgear.example.erp_api_demo.entity.TankStatus;
-import com.thirdgear.example.erp_api_demo.entity.WorkOrderStatus;
+import org.springframework.stereotype.Service;
+
+import com.thirdgear.example.erp_api_demo.core.entity.WorkOrderStatus;
 import com.thirdgear.example.erp_api_demo.entity_mgmnt.service.WorkOrderStatusMgmntService;
 
+@Service("WorkOrderStatusMgmntService")
 public class WorkOrderStatusMgmntServiceImpl implements WorkOrderStatusMgmntService
 {
 
 	@Override
 	public Iterable<WorkOrderStatus> listWorkOrderStatus() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public WorkOrderStatus createOperationCode(WorkOrderStatus workOrderStatus) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -35,6 +29,14 @@ public class WorkOrderStatusMgmntServiceImpl implements WorkOrderStatusMgmntServ
 
 	@Override
 	public WorkOrderStatus getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public WorkOrderStatus createWorkOrderStatus(WorkOrderStatus workOrderStatus) {
 		// TODO Auto-generated method stub
 		return null;
 	}

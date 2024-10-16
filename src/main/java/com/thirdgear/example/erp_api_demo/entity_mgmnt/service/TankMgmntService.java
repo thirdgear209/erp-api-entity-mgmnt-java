@@ -2,7 +2,7 @@ package com.thirdgear.example.erp_api_demo.entity_mgmnt.service;
 
 import java.util.List;
 
-import com.thirdgear.example.erp_api_demo.entity.Tank;
+import com.thirdgear.example.erp_api_demo.core.entity.Tank;
 
 /**
  * TankMgmntService
@@ -25,7 +25,7 @@ public interface TankMgmntService{
 	/**
 	 * 
 	 */
-	public void updateTank(Tank tank);
+	public Tank updateTank(Tank tank);
 	
 	/**
 	 * 

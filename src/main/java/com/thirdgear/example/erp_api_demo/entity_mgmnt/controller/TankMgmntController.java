@@ -9,16 +9,15 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.thirdgear.example.erp_api_demo.entity.Tank;
-import com.thirdgear.example.erp_api_demo.service.TankManagementService;
-import com.thirdgear.example.erp_api_demo.service.TankService;
+import com.thirdgear.example.erp_api_demo.core.entity.Tank;
+import com.thirdgear.example.erp_api_demo.entity_mgmnt.service.TankMgmntService;
 
 @RestController
-@RequestMapping("/tank")
+@RequestMapping("/mgmnt/tank")
 public class TankMgmntController {
 	
     @Autowired
-    TankManagementService tankService;
+    TankMgmntService tankService;
 
     @GetMapping
     public Iterable<Tank> getTanks(){
@@ -30,12 +29,12 @@ public class TankMgmntController {
     
     @PostMapping    
     public Tank post(Tank tank){
-        tankService.createTank(tank);
+        return tankService.createTank(tank);
     }
 
     @PutMapping
     public Tank put(Tank tank){
-        tankService.updateTank(tank);
+        return tankService.updateTank(tank);
     }
 
     @DeleteMapping("/{id}")

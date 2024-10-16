@@ -34,7 +34,6 @@ docker run -p 8080:8080 native-test:0.0.1-SNAPSHOT
 ## Enhancment log
 8/8/2024
 	Initial project setup w/w single API (Tank)
-	Enabled Docker support
 	Configured GitHub action for CI deployment to server
 	
 ## Additional information 

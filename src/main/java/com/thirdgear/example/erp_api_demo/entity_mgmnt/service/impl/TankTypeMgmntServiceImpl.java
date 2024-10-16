@@ -2,22 +2,24 @@ package com.thirdgear.example.erp_api_demo.entity_mgmnt.service.impl;
 
 import java.util.List;
 
-import com.thirdgear.example.erp_api_demo.entity.Tank;
-import com.thirdgear.example.erp_api_demo.entity.TankType;
+import org.springframework.stereotype.Service;
+
+import com.thirdgear.example.erp_api_demo.core.entity.TankType;
 import com.thirdgear.example.erp_api_demo.entity_mgmnt.service.TankTypeMgmntService;
 
+@Service("TankTypeMgmntService")
 public class TankTypeMgmntServiceImpl implements TankTypeMgmntService{
 
 	@Override
-	public Tank createTankType(TankType tankType) {
+	public TankType createTankType(TankType tankType) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void updateTankType(TankType tankType) {
+	public TankType updateTankType(TankType tankType) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 	@Override
